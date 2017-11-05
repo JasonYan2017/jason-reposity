@@ -1,7 +1,6 @@
-pring Cloud构建微服务架构：服务注册与发现 (Eureka使用以及服务之间如何使用RestTemplate调用)。
+spring Cloud构建微服务架构：服务注册与发现 (Eureka使用以及服务之间如何使用RestTemplate调用)。
 1. common模块为公共包,second模块为注册中心，first，third，fourth模块为客户端。
 2. first模块调用fourth服务,third调用first服务。
-
 
 注意：服务端pom文件：
             <!-- springboot的依赖-->
@@ -53,3 +52,7 @@ pring Cloud构建微服务架构：服务注册与发现 (Eureka使用以及服�
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        
+    先启动second模块服务端(即注册中心)，在启动其他客户端。注册结果：
+
+![Aaron Swartz](https://github.com/JasonYan2017/jason-reposity/raw/master/ereka.jpg)
